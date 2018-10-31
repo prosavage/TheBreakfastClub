@@ -16,6 +16,7 @@ public class pancake extends Actor
     {
         this.doMoveControls();
 
+
     }
 
     public void doMoveControls() {
@@ -23,9 +24,9 @@ public class pancake extends Actor
             this.turn(5);
         } else if (Greenfoot.isKeyDown("right")) {
             this.turn(-5);
-        } else if (Greenfoot.isKeyDown("up")) {
-            this.move(1);
         } else if (Greenfoot.isKeyDown("down")) {
+            this.move(1);
+        } else if (Greenfoot.isKeyDown("up")) {
             this.move(-1);
         }
     }
