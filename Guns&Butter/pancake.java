@@ -19,7 +19,7 @@ public class pancake extends Actor
 
     }
 
-    public void doMoveControls() {
+    private void doMoveControls() {
         if (Greenfoot.isKeyDown("left")) {
             this.turn(5);
         } else if (Greenfoot.isKeyDown("right")) {
