@@ -18,6 +18,14 @@ public class waffle extends Actor
     public void act() 
     {
         // Add your action code here.
+        this.doMoveControls();
+
+
+
+
+    }
+
+    public void doMoveControls() {
         if (Greenfoot.isKeyDown("a")) {
             this.turn(5);
         } else if (Greenfoot.isKeyDown("d")) {
@@ -27,9 +35,5 @@ public class waffle extends Actor
         } else if (Greenfoot.isKeyDown("s")) {
             this.move(-1);
         }
-
-
-
-
-    }    
+    }
 }
