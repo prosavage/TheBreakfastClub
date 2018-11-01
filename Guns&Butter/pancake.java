@@ -14,20 +14,16 @@ public class pancake extends Actor
      */
     public void act() 
     {
-        this.doMoveControls();
-
-
-    }
-
-    private void doMoveControls() {
+        // Add your action code here.
+        
         if (Greenfoot.isKeyDown("left")) {
             this.turn(5);
         } else if (Greenfoot.isKeyDown("right")) {
             this.turn(-5);
-        } else if (Greenfoot.isKeyDown("down")) {
-            this.move(1);
         } else if (Greenfoot.isKeyDown("up")) {
+            this.move(1);
+        } else if (Greenfoot.isKeyDown("down")) {
             this.move(-1);
         }
-    }
+    }    
 }
