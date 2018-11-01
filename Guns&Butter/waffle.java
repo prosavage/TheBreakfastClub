@@ -19,13 +19,13 @@ public class waffle extends Actor
     {
         // Add your action code here.
         if (Greenfoot.isKeyDown("a")) {
-            this.turn(5);
-        } else if (Greenfoot.isKeyDown("d")) {
-            this.turn(-5);
-        } else if (Greenfoot.isKeyDown("w")) {
-            this.move(1);
-        } else if (Greenfoot.isKeyDown("s")) {
+            this.turn(-3);
+        } if (Greenfoot.isKeyDown("d")) {
+            this.turn(3);
+        } if (Greenfoot.isKeyDown("w")) {
             this.move(-1);
+        } if (Greenfoot.isKeyDown("s")) {
+            this.move(1);
         }
 
 
