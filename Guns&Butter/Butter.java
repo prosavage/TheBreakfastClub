@@ -14,11 +14,13 @@ public class Butter extends Actor
      */
    
     private int rotation;
-    
-    public void setRotation(int rotation)
+    private GreenfootImage butterShot = new GreenfootImage("butterShot.png");
+    public Butter(){
+        setImage(butterShot);
+    }
+    public void setRotationOfButter(int rotation)
     {
-            setRotation(rotation);
-              
+           super.setRotation(rotation);        
     }
     public void act() 
     {

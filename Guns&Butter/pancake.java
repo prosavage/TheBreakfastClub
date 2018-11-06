@@ -19,6 +19,11 @@ public class pancake extends Actor
     {
         // Add your action code here.
 
+       if (Greenfoot.isKeyDown("m")) {
+            Butter butter = new Butter();
+            butter.setRotationOfButter(-1 * this.getRotation());
+            getWorld().addObject(butter, this.getX(), this.getY());
+        }
         if (Greenfoot.isKeyDown("right")) {
             this.turn(3);
         }
