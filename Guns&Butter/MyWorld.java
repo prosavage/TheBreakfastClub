@@ -13,8 +13,8 @@ public class MyWorld extends greenfoot.World
      */
     public MyWorld()
     {
-        // Create a new world with 500x500 cells with a cell size of 1x1 pixels.
-        super(500, 500, 1);
+        // Create a new world with 800x800 cells with a cell size of 1x1 pixels.
+        super(800, 800, 1);
         addObject(new waffle(), 200, 200);
         addObject(new pancake(), 400, 400);
     }
