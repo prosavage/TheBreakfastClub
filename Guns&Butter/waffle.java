@@ -11,6 +11,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class waffle extends Actor
 {
+
+    private int health = 200;
+
     /**
      * Act - do whatever the waffle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -34,5 +37,13 @@ public class waffle extends Actor
 
 
 
-    }    
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }
