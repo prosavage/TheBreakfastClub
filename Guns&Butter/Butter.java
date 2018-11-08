@@ -18,12 +18,22 @@ public class Butter extends Actor
     public Butter(){
         setImage(butterShot);
     }
-    public void setRotationOfButter(int rotation)
-    {
-           super.setRotation(rotation);        
-    }
+    
     public void act() 
     {
-      move(1);       
-    }    
+      move(5); 
+      removeButter();
+    } 
+    
+    public void setRotationOfButter(int rotation)
+    {
+      super.setRotation(rotation);        
+    }
+    
+    public void removeButter(){
+       if (this.getX() <= -5 || this.getX() >= 805 || this.getY() <= -5 || this.getY() >= 805){
+         getWorld().removeObject(this);  
+       }
+    }
+    
 }
