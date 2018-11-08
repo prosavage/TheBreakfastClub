@@ -23,9 +23,11 @@ public class waffle extends Actor
     public void act() 
     {
         // Add your action code here.
+        lookForButter();
         movement();
         shoot();
         butterPowerUp();
+        
     }
 
     public int getHealth() {
@@ -60,7 +62,11 @@ public class waffle extends Actor
                 getWorld().addObject(butter, this.getX(), this.getY());
                 shotCounterWaffle = 0;
             }
-        } 
+       } 
+       if (isTouching(Butter.class)){
+           Butter c = (Butter) getOneIntersectingObject(Butter.class);
+           c.owner = 0;
+       }
     }
     
     public void butterPowerUp(){
@@ -75,6 +81,16 @@ public class waffle extends Actor
         }
         if (butterPowerUpCounter == 0){
            shotCounterMaxWaffle = 30; 
+        }
+    }
+    
+    public void lookForButter(){
+        if(isTouching(Butter.class)){
+            Butter a = (Butter) getOneIntersectingObject(Butter.class);
+            if (a.owner == 1){
+                health = health - 20;
+                getWorld().removeObject(a);
+            }
         }
     }
 }   

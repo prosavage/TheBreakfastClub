@@ -15,8 +15,10 @@ public class Butter extends Actor
    
     private int rotation;
     private GreenfootImage butterShot = new GreenfootImage("butterShot.png");
+    public int owner;
     public Butter(){
         setImage(butterShot);
+        
     }
     
     public void act() 
