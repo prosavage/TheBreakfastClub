@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class waffle extends Actor
-{
+public class waffle extends Actor {
 
     private int health = 200;
     public int shotCounterWaffle = 29;
@@ -20,14 +19,21 @@ public class waffle extends Actor
      * Act - do whatever the waffle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
+    public void act() {
         // Add your action code here.
         lookForButter();
         movement();
         shoot();
         butterPowerUp();
+        checkifDed();
         
+    }
+
+    public void checkifDed() {
+        if (this.health == 0) {
+            this.getWorld().removeObject(this);
+            Greenfoot.stop();
+        }
     }
 
     public int getHealth() {
@@ -53,7 +59,7 @@ public class waffle extends Actor
         }
     }
     
-    public void shoot(){
+    public void shoot() {
        if (Greenfoot.isKeyDown("space")) {
             shotCounterWaffle++;
             if (shotCounterWaffle >= shotCounterMaxWaffle){
@@ -63,18 +69,10 @@ public class waffle extends Actor
                 getWorld().addObject(butter, this.getX(), this.getY());
                 shotCounterWaffle = 0;
             }
-<<<<<<< HEAD
-       } 
-       if (isTouching(Butter.class)){
-           Butter c = (Butter) getOneIntersectingObject(Butter.class);
-           c.owner = 0;
        }
-=======
-        } 
-        
-         
->>>>>>> master
     }
+        
+
     
     public void butterPowerUp(){
         butterPowerUp b = (butterPowerUp) getOneIntersectingObject(butterPowerUp.class);
@@ -92,11 +90,12 @@ public class waffle extends Actor
     }
     
     public void lookForButter(){
-        if(isTouching(Butter.class)){
+        if (isTouching(Butter.class)){
+
             Butter a = (Butter) getOneIntersectingObject(Butter.class);
-            if (a.owner == 1){
+            if (a.getOwner() == 1){
                 health = health - 20;
-                getWorld().removeObject(a);
+                this.getWorld().removeObject(a);
             }
         }
     }

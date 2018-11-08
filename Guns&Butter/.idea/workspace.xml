@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab1aed66-d61b-4ba4-bcc8-d916a8c1e640" name="Default Changelist" comment="Fixed brace problems.">
+    <list default="true" id="ab1aed66-d61b-4ba4-bcc8-d916a8c1e640" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Butter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Butter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Butter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Butter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pancake.class" beforeDir="false" afterPath="$PROJECT_DIR$/pancake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pancake.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/pancake.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pancake.java" beforeDir="false" afterPath="$PROJECT_DIR$/pancake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.greenfoot" beforeDir="false" afterPath="$PROJECT_DIR$/project.greenfoot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waffle.class" beforeDir="false" afterPath="$PROJECT_DIR$/waffle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waffle.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/waffle.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/waffle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +37,7 @@
           <entry key="class" value="4" />
           <entry key="css" value="1" />
           <entry key="greenfoot" value="1" />
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
           <entry key="png" value="1" />
           <entry key="properties" value="1" />
         </counts>
@@ -38,7 +47,7 @@
           <entry key="CLASS" value="4" />
           <entry key="CSS" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
@@ -47,34 +56,25 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="greenfoot" value="20" />
-          <entry key="java" value="934" />
-          <entry key="txt" value="351" />
+          <entry key="java" value="1121" />
+          <entry key="txt" value="417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="934" />
-          <entry key="PLAIN_TEXT" value="372" />
+          <entry key="JAVA" value="1121" />
+          <entry key="PLAIN_TEXT" value="438" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyWorld.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/waffle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="372">
+              <caret line="98" column="48" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -112,15 +112,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Butter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="e#732#733#0" expanded="true" />
                 <element signature="e#781#782#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pancake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -154,14 +163,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/waffle.java" />
         <option value="$PROJECT_DIR$/butter.java" />
-        <option value="$PROJECT_DIR$/pancake.java" />
         <option value="$PROJECT_DIR$/Pancake.java" />
         <option value="$PROJECT_DIR$/CharacterType.java" />
         <option value="$PROJECT_DIR$/MyWorld.java" />
         <option value="$PROJECT_DIR$/project.greenfoot" />
         <option value="$PROJECT_DIR$/Butter.java" />
+        <option value="$PROJECT_DIR$/pancake.java" />
+        <option value="$PROJECT_DIR$/waffle.java" />
       </list>
     </option>
   </component>
@@ -193,7 +202,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541101083839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541711467095" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../greenfoot.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -269,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541710028264</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed issues with butter leaving world, and removed debug messages">
+      <created>1541710377065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541710377065</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -292,7 +308,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Floobits" order="10" weight="0.3294964" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3294964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -314,7 +330,8 @@
     <MESSAGE value="Flipped control directions so the images that Brianne designed work correctly." />
     <MESSAGE value="Changed method accessors to private for doMoveControls() as they should not be accessed by other classes." />
     <MESSAGE value="Fixed brace problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed brace problems." />
+    <MESSAGE value="Fixed issues with butter leaving world, and removed debug messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues with butter leaving world, and removed debug messages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MyWorld.class">
@@ -327,25 +344,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pancake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CharacterType.java" />
     <entry file="file://$PROJECT_DIR$/MyWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waffle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -384,12 +387,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Butter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        <state relative-caret-position="280">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="e#732#733#0" expanded="true" />
             <element signature="e#781#782#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pancake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waffle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="98" column="48" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
         </state>
       </provider>
     </entry>

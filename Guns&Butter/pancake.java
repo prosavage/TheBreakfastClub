@@ -23,6 +23,7 @@ public class pancake extends Actor
         lookForButter();
         movement();
         shoot();
+        checkifDed();
         butterPowerUp();
         
     }
@@ -49,7 +50,13 @@ public class pancake extends Actor
             this.move(2);
         }
     }
-    
+    public void checkifDed() {
+        if (this.health == 0) {
+            this.getWorld().removeObject(this);
+            Greenfoot.stop();
+        }
+    }
+
     public void shoot(){
        if (Greenfoot.isKeyDown("m")) {
             shotCounterPancake++;
@@ -60,17 +67,7 @@ public class pancake extends Actor
                 getWorld().addObject(butter, this.getX(), this.getY());
                 shotCounterPancake = 0;
             }
-        }
-<<<<<<< HEAD
-        if (isTouching(Butter.class)){
-           Butter c = (Butter) getOneIntersectingObject(Butter.class);
-           c.owner = 1;
        }
-=======
-        
-        
-     
->>>>>>> master
     }
     
     public void butterPowerUp(){
@@ -89,11 +86,12 @@ public class pancake extends Actor
     }
     
     public void lookForButter(){
-        if(isTouching(Butter.class)){
+        if (isTouching(Butter.class)){
             Butter a = (Butter) getOneIntersectingObject(Butter.class);
-            if (a.owner == 0){
-                health = health - 20;
-                getWorld().removeObject(a);
+            if (a.getOwner() == 0){
+
+                health -= 20;
+                this.getWorld().removeObject(a);
             }
         }
     }

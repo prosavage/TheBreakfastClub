@@ -17,7 +17,6 @@ public class Butter extends Actor
     private int owner;
     
     private GreenfootImage butterShot = new GreenfootImage("butterShot.png");
-    public int owner;
     public Butter(){
         setImage(butterShot);
         
@@ -38,24 +37,6 @@ public class Butter extends Actor
        if (this.getX() <= -5 || this.getX() >= 805 || this.getY() <= -5 || this.getY() >= 805){
          getWorld().removeObject(this);  
        }
-       else if (getIntersectingObjects(pancake.class).size() == 1)
-        {
-
-            if(owner == 0) {
-               
-                getWorld().removeObject(this);
-                return;
-            }
-        }  
-        else if (getIntersectingObjects(waffle.class).size() == 1)
-        {
-            
-            if(owner == 1) {
-               getWorld().removeObject(this);
-               return;
-            }    
-        
-        }
     }
 
     
