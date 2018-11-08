@@ -1,3 +1,4 @@
+import greenfoot.*;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -14,8 +15,15 @@ public class MyWorld extends greenfoot.World
     public MyWorld()
     {
         // Create a new world with 800x800 cells with a cell size of 1x1 pixels.
-        super(800, 800, 1);
+        super(800, 800, 1, false);
         addObject(new waffle(), 200, 200);
         addObject(new pancake(), 400, 400);
+        
+    }
+    
+    public void act(){
+        if (Greenfoot.getRandomNumber(1000) <= 1) {
+            addObject(new butterPowerUp(), Greenfoot.getRandomNumber(700) + 50, Greenfoot.getRandomNumber(700) + 50);
+        }
     }
 }
