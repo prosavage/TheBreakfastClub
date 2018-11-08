@@ -40,14 +40,14 @@ public class Butter extends Actor
         {
 
             if(owner == 0) {
-                System.out.println("Pancake");
+               
                 getWorld().removeObject(this);
                 return;
             }
         }  
-        if (getIntersectingObjects(waffle.class).size() == 1)
+        else if (getIntersectingObjects(waffle.class).size() == 1)
         {
-            System.out.println("Waffle!!!!!!!!!!1");
+            
             if(owner == 1) {
                getWorld().removeObject(this);
                return;
