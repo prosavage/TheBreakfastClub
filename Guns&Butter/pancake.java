@@ -23,6 +23,7 @@ public class pancake extends Actor
         movement();
         shoot();
         butterPowerUp();
+        
     }
 
     public int getHealth() {
@@ -54,10 +55,14 @@ public class pancake extends Actor
             if (shotCounterPancake >= shotCounterMaxPancake){
                 Butter butter = new Butter();
                 butter.setRotationOfButter(this.getRotation());
+                butter.setOwner(1);
                 getWorld().addObject(butter, this.getX(), this.getY());
                 shotCounterPancake = 0;
             }
         }
+        
+        
+     
     }
     
     public void butterPowerUp(){
