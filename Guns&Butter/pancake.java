@@ -20,6 +20,7 @@ public class pancake extends Actor
     public void act() 
     {
         // Add your action code here.
+        lookForButter();
         movement();
         shoot();
         butterPowerUp();
@@ -50,7 +51,7 @@ public class pancake extends Actor
     }
     
     public void shoot(){
-        if (Greenfoot.isKeyDown("m")) {
+       if (Greenfoot.isKeyDown("m")) {
             shotCounterPancake++;
             if (shotCounterPancake >= shotCounterMaxPancake){
                 Butter butter = new Butter();
@@ -60,9 +61,16 @@ public class pancake extends Actor
                 shotCounterPancake = 0;
             }
         }
+<<<<<<< HEAD
+        if (isTouching(Butter.class)){
+           Butter c = (Butter) getOneIntersectingObject(Butter.class);
+           c.owner = 1;
+       }
+=======
         
         
      
+>>>>>>> master
     }
     
     public void butterPowerUp(){
@@ -77,6 +85,16 @@ public class pancake extends Actor
         }
         if (butterPowerUpCounter == 0){
            shotCounterMaxPancake = 30; 
+        }
+    }
+    
+    public void lookForButter(){
+        if(isTouching(Butter.class)){
+            Butter a = (Butter) getOneIntersectingObject(Butter.class);
+            if (a.owner == 0){
+                health = health - 20;
+                getWorld().removeObject(a);
+            }
         }
     }
 }
