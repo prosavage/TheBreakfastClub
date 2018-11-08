@@ -23,8 +23,8 @@ public class pancake extends Actor
         lookForButter();
         movement();
         shoot();
-        checkifDed();
         butterPowerUp();
+        checkifDed();
         
     }
 
