@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Butter
-comment0.text=\n\ Write\ a\ description\ of\ class\ Butter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Butter\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Butter()
 comment2.params=
@@ -9,4 +9,8 @@ comment3.params=rotation
 comment3.target=void\ setRotationOfButter(int)
 comment4.params=
 comment4.target=void\ removeButter()
-numComments=5
+comment5.params=
+comment5.target=int\ getOwner()
+comment6.params=owner
+comment6.target=void\ setOwner(int)
+numComments=7

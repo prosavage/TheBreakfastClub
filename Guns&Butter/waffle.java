@@ -59,14 +59,21 @@ public class waffle extends Actor
             if (shotCounterWaffle >= shotCounterMaxWaffle){
                 Butter butter = new Butter();
                 butter.setRotationOfButter(this.getRotation());
+                butter.setOwner(0);
                 getWorld().addObject(butter, this.getX(), this.getY());
                 shotCounterWaffle = 0;
             }
+<<<<<<< HEAD
        } 
        if (isTouching(Butter.class)){
            Butter c = (Butter) getOneIntersectingObject(Butter.class);
            c.owner = 0;
        }
+=======
+        } 
+        
+         
+>>>>>>> master
     }
     
     public void butterPowerUp(){
