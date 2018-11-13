@@ -25,8 +25,9 @@ public class pancake extends Actor
         movement();
         shoot();
         butterPowerUp();
-        checkifDed();
         healthUp();
+        checkifDed();
+        
         
     }
 
