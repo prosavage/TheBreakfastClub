@@ -60,10 +60,9 @@ public class waffle extends Actor {
         }
         if (Greenfoot.isKeyDown("w")) {
             if(this.getY() <= 100){
-                this.setLocation(this.getX(),this.getY()+1);
-            } else{  
+                this.setLocation(this.getX(),this.getY()+2);
+            } 
             this.move(2);
-            }
         }
     }
     

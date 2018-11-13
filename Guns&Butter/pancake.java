@@ -51,10 +51,9 @@ public class pancake extends Actor
         }
         if (Greenfoot.isKeyDown("up")) {
             if(this.getY() <= 100){
-                this.setLocation(this.getX(),this.getY()+1);
-            } else{  
+                this.setLocation(this.getX(),this.getY()+2);
+            } 
             this.move(2);
-            }
         }
     }
     public void checkifDed() {
