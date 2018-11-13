@@ -25,6 +25,7 @@ public class pancake extends Actor
         shoot();
         butterPowerUp();
         checkifDed();
+        healthUp();
         
     }
 
@@ -93,6 +94,14 @@ public class pancake extends Actor
                 health -= 20;
                 this.getWorld().removeObject(a);
             }
+        }
+    }
+    
+    public void healthUp(){
+        healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
+        if (b != null){
+            getWorld().removeObject(b);
+            health+=40;
         }
     }
 }

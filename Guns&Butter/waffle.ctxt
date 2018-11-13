@@ -18,4 +18,6 @@ comment7.params=
 comment7.target=void\ butterPowerUp()
 comment8.params=
 comment8.target=void\ lookForButter()
-numComments=9
+comment9.params=
+comment9.target=void\ healthUp()
+numComments=10
