@@ -13,6 +13,7 @@ public class pancake extends Actor
     public int shotCounterPancake = 29;
     public int shotCounterMaxPancake = 30;
     private int butterPowerUpCounter = 0;
+    private int maxHealth = 200;
     /**
      * Act - do whatever the pancake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -101,7 +102,9 @@ public class pancake extends Actor
         healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
         if (b != null){
             getWorld().removeObject(b);
-            health+=40;
+            if (health <= maxHealth){
+                health+=40;
+            }
         }
     }
 }
