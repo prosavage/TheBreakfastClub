@@ -1,6 +1,6 @@
 
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 
 
 /**
@@ -16,6 +16,7 @@ public class waffle extends Actor {
     public int shotCounterMaxWaffle = 30;
     private int butterPowerUpCounter = 0;
     private int maxHealth = 200;
+    public ArrayList<SyrupHealth> healthBar = new ArrayList<SyrupHealth>();
     /**
      * Act - do whatever the waffle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -32,7 +33,10 @@ public class waffle extends Actor {
         
         
     }
-
+    
+    public void addHealthBottle(SyrupHealth syrup){
+        healthBar.add(syrup);
+    }
     public void checkifDed() {
         if (this.health == 0) {
             this.getWorld().removeObject(this);

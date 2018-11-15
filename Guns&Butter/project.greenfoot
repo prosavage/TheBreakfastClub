@@ -1,10 +1,18 @@
 #Greenfoot project file
+<<<<<<< Updated upstream
 class.SyrupHealth.image=syrupBottle.png
+=======
+class.Butter.image=butterShot.png
+>>>>>>> Stashed changes
 class.butterPowerUp.image=butter.png
 class.healthUp.image=syrupBottle2.0.png
 class.pancake.image=pancake.png
 class.waffle.image=waffle.png
+<<<<<<< Updated upstream
 class.whitebar.image=whitebar1.png
+=======
+class.whitebar.image=whitebar.png
+>>>>>>> Stashed changes
 dependency1.from=MyWorld
 dependency1.to=waffle
 dependency1.type=UsesDependency
@@ -35,12 +43,21 @@ dependency8.type=UsesDependency
 dependency9.from=pancake
 dependency9.to=butterPowerUp
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 editor.fx.0.height=722
 editor.fx.0.width=800
 editor.fx.0.x=289
 editor.fx.0.y=36
 height=735
 package.numDependencies=10
+=======
+editor.fx.0.height=900
+editor.fx.0.width=1440
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=805
+package.numDependencies=11
+>>>>>>> Stashed changes
 package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false

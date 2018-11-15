@@ -17,8 +17,15 @@ public class MyWorld extends greenfoot.World
         // Create a new world with 800x800 cells with a cell size of 1x1 pixels.
         
         super(800, 800, 1, false);
+        setPaintOrder(SyrupHealth.class, whitebar.class);
         setBackground(new GreenfootImage("Background.jpg"));
-        addObject(new waffle(), 200, 200);
+        waffle waffle = new waffle();
+        SyrupHealth syrup1 = new SyrupHealth();
+        addObject(syrup1, 50, 10);
+        waffle.addHealthBottle(syrup1);
+        //waffle.addHealthBottle(syrup2);
+        addObject(waffle, 200, 200);
+        
         addObject(new pancake(), 400, 400);
         addObject(new whitebar(), 400, 10);
     }
@@ -31,4 +38,6 @@ public class MyWorld extends greenfoot.World
             addObject(new healthUp(), Greenfoot.getRandomNumber(700) + 50, Greenfoot.getRandomNumber(700) + 50);
         }
     }
+    
+    
 }
