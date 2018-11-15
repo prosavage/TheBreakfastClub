@@ -12,10 +12,6 @@ public class whitebar extends Actor
      * Act - do whatever the whitebar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    public whitebar(){
-        setImage(new GreenfootImage("whitebar1.png"));
-    }
     public void act() 
     {
         // Add your action code here.

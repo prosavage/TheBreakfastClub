@@ -20,7 +20,7 @@ public class MyWorld extends greenfoot.World
         setBackground(new GreenfootImage("Background.jpg"));
         addObject(new waffle(), 200, 200);
         addObject(new pancake(), 400, 400);
-        addObject(new whitebar(), 400, 50);
+        addObject(new whitebar(), 400, 10);
     }
     
     public void act(){
