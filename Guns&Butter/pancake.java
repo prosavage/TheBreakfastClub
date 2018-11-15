@@ -13,6 +13,7 @@ public class pancake extends Actor
     public int shotCounterPancake = 29;
     public int shotCounterMaxPancake = 30;
     private int butterPowerUpCounter = 0;
+    private int maxHealth = 200;
     /**
      * Act - do whatever the pancake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -24,7 +25,9 @@ public class pancake extends Actor
         movement();
         shoot();
         butterPowerUp();
+        healthUp();
         checkifDed();
+        
         
     }
 
@@ -47,6 +50,9 @@ public class pancake extends Actor
             this.move(-2);
         }
         if (Greenfoot.isKeyDown("up")) {
+            if(this.getY() <= 100){
+                this.setLocation(this.getX(),this.getY()+2);
+            } 
             this.move(2);
         }
     }
@@ -92,6 +98,16 @@ public class pancake extends Actor
 
                 health -= 20;
                 this.getWorld().removeObject(a);
+            }
+        }
+    }
+    
+    public void healthUp(){
+        healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
+        if (b != null){
+            getWorld().removeObject(b);
+            if (health <= maxHealth){
+                health+=40;
             }
         }
     }

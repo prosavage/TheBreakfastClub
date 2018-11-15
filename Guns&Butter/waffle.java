@@ -15,17 +15,21 @@ public class waffle extends Actor {
     public int shotCounterWaffle = 29;
     public int shotCounterMaxWaffle = 30;
     private int butterPowerUpCounter = 0;
+    private int maxHealth = 200;
     /**
      * Act - do whatever the waffle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
         // Add your action code here.
+        
         lookForButter();
         movement();
         shoot();
         butterPowerUp();
+        healthUp();
         checkifDed();
+        
         
     }
 
@@ -55,6 +59,9 @@ public class waffle extends Actor {
             this.move(-2);
         }
         if (Greenfoot.isKeyDown("w")) {
+            if(this.getY() <= 100){
+                this.setLocation(this.getX(),this.getY()+2);
+            } 
             this.move(2);
         }
     }
@@ -97,6 +104,17 @@ public class waffle extends Actor {
                 health = health - 20;
                 this.getWorld().removeObject(a);
             }
+        }
+    }
+    
+    public void healthUp(){
+        healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
+        if (b != null){
+            getWorld().removeObject(b);
+            if (health <= maxHealth){
+                health+=40;
+            }
+            
         }
     }
 }   
