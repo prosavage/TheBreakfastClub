@@ -14,7 +14,7 @@ public class whitebar extends Actor
      */
     
     public whitebar(){
-        setImage(new GreenfootImage("whitebar.png"));
+        setImage(new GreenfootImage("whitebar1.png"));
     }
     public void act() 
     {
