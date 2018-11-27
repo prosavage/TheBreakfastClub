@@ -1,63 +1,56 @@
 #Greenfoot project file
-<<<<<<< Updated upstream
-class.SyrupHealth.image=syrupBottle.png
-=======
 class.Butter.image=butterShot.png
->>>>>>> Stashed changes
+class.SyrupHealth.image=syrupBottle.png
 class.butterPowerUp.image=butter.png
 class.healthUp.image=syrupBottle2.0.png
 class.pancake.image=pancake.png
 class.waffle.image=waffle.png
-<<<<<<< Updated upstream
-class.whitebar.image=whitebar1.png
-=======
 class.whitebar.image=whitebar.png
->>>>>>> Stashed changes
 dependency1.from=MyWorld
 dependency1.to=waffle
 dependency1.type=UsesDependency
-dependency10.from=pancake
+dependency10.from=waffle
 dependency10.to=healthUp
 dependency10.type=UsesDependency
+dependency11.from=pancake
+dependency11.to=Butter
+dependency11.type=UsesDependency
+dependency12.from=pancake
+dependency12.to=butterPowerUp
+dependency12.type=UsesDependency
+dependency13.from=pancake
+dependency13.to=healthUp
+dependency13.type=UsesDependency
 dependency2.from=MyWorld
-dependency2.to=pancake
+dependency2.to=SyrupHealth
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
-dependency3.to=butterPowerUp
+dependency3.to=pancake
 dependency3.type=UsesDependency
 dependency4.from=MyWorld
-dependency4.to=healthUp
+dependency4.to=whitebar
 dependency4.type=UsesDependency
-dependency5.from=waffle
-dependency5.to=Butter
+dependency5.from=MyWorld
+dependency5.to=butterPowerUp
 dependency5.type=UsesDependency
-dependency6.from=waffle
-dependency6.to=butterPowerUp
+dependency6.from=MyWorld
+dependency6.to=healthUp
 dependency6.type=UsesDependency
 dependency7.from=waffle
-dependency7.to=healthUp
+dependency7.to=SyrupHealth
 dependency7.type=UsesDependency
-dependency8.from=pancake
+dependency8.from=waffle
 dependency8.to=Butter
 dependency8.type=UsesDependency
-dependency9.from=pancake
+dependency9.from=waffle
 dependency9.to=butterPowerUp
 dependency9.type=UsesDependency
-<<<<<<< Updated upstream
-editor.fx.0.height=722
-editor.fx.0.width=800
-editor.fx.0.x=289
-editor.fx.0.y=36
-height=735
-package.numDependencies=10
-=======
 editor.fx.0.height=900
 editor.fx.0.width=1440
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=805
-package.numDependencies=11
->>>>>>> Stashed changes
+package.numDependencies=13
 package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false

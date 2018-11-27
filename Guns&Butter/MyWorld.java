@@ -20,13 +20,20 @@ public class MyWorld extends greenfoot.World
         setPaintOrder(SyrupHealth.class, whitebar.class);
         setBackground(new GreenfootImage("Background.jpg"));
         waffle waffle = new waffle();
-        SyrupHealth syrup1 = new SyrupHealth();
-        addObject(syrup1, 50, 10);
-        waffle.addHealthBottle(syrup1);
-        //waffle.addHealthBottle(syrup2);
-        addObject(waffle, 200, 200);
         
-        addObject(new pancake(), 400, 400);
+        for (int i = 0; i < 10;i++){
+            SyrupHealth syrup = new SyrupHealth();
+            addObject(syrup, 50 + (20*i), 10);
+            waffle.addHealthBottle(syrup);
+        }
+        pancake pancake = new pancake();
+        for (int i = 0; i < 10;i++){
+            SyrupHealth syrup = new SyrupHealth();
+            addObject(syrup, 750 - (20*i), 10);
+            pancake.addHealthBottle(syrup);
+        }
+        addObject(waffle, 200, 200);
+        addObject(pancake, 400, 400);
         addObject(new whitebar(), 400, 10);
     }
     

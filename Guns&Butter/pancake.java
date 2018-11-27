@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.ArrayList;
 
 /**
  * Write a description of class pancake here.
@@ -9,11 +10,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class pancake extends Actor
 {
 
-    private int health = 200;
+    private int health = 10;
     public int shotCounterPancake = 29;
     public int shotCounterMaxPancake = 30;
     private int butterPowerUpCounter = 0;
-    private int maxHealth = 200;
+    private int maxHealth = 10;
+    public ArrayList<SyrupHealth> healthBar = new ArrayList<SyrupHealth>();
     /**
      * Act - do whatever the pancake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -96,7 +98,9 @@ public class pancake extends Actor
             Butter a = (Butter) getOneIntersectingObject(Butter.class);
             if (a.getOwner() == 0){
 
-                health -= 20;
+                health -= 1;
+                getWorld().removeObject(healthBar.get(healthBar.size() - 1));
+                healthBar.remove(healthBar.size() - 1);
                 this.getWorld().removeObject(a);
             }
         }
@@ -106,9 +110,18 @@ public class pancake extends Actor
         healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
         if (b != null){
             getWorld().removeObject(b);
-            if (health <= maxHealth){
-                health+=40;
+            if (health < maxHealth){
+                
+                int haveHealth = healthBar.size();
+                SyrupHealth syrup = new SyrupHealth();
+                getWorld().addObject(syrup, 750 - (20* (haveHealth)), 10);
+                this.addHealthBottle(syrup);
+                health+=1;
             }
         }
+    }
+    
+    public void addHealthBottle(SyrupHealth syrup){
+        healthBar.add(syrup);
     }
 }
