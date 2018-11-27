@@ -43,17 +43,39 @@ public class pancake extends Actor
     
     public void movement(){
         if (Greenfoot.isKeyDown("right")) {
+            
             this.turn(3);
         }
         if (Greenfoot.isKeyDown("left")) {
             this.turn(-3);
         }
         if (Greenfoot.isKeyDown("down")) {
+            if(this.getY() <= 90){
+                this.setLocation(this.getX(),90);
+            } 
+            if(this.getY() >= 790){
+                this.setLocation(this.getX(),790);
+            }
+            if(this.getX() >= 790){
+                this.setLocation(790,this.getY());
+            } 
+            if(this.getX() <= 10){
+                this.setLocation(10,this.getY());
+            } 
             this.move(-2);
         }
         if (Greenfoot.isKeyDown("up")) {
-            if(this.getY() <= 100){
-                this.setLocation(this.getX(),100);
+            if(this.getY() <= 90){
+                this.setLocation(this.getX(),90);
+            } 
+            if(this.getY() >= 790){
+                this.setLocation(this.getX(),790);
+            }
+            if(this.getX() >= 790){
+                this.setLocation(790,this.getY());
+            } 
+            if(this.getX() <= 10){
+                this.setLocation(10,this.getY());
             } 
             this.move(2);
         }
