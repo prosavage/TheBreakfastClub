@@ -12,6 +12,10 @@ public class GameRules extends Actor
      * Act - do whatever the GameRules wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    public GameRules(){
+        setImage(new GreenfootImage("GameRules1.png"));
+    }
     public void act() 
     {
         if (Greenfoot.mouseClicked(null)){
