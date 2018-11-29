@@ -40,6 +40,7 @@ public class waffle extends Actor {
     public void checkifDed() {
         if (this.health == 0) {
             this.getWorld().removeObject(this);
+            Greenfoot.playSound("victory-sound.wav");
             Greenfoot.stop();
         }
     }
