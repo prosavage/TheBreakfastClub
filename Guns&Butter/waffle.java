@@ -1,6 +1,6 @@
 
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 
 
 /**
@@ -11,11 +11,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class waffle extends Actor {
 
-    private int health = 200;
+    private int health = 10;
     public int shotCounterWaffle = 29;
     public int shotCounterMaxWaffle = 30;
     private int butterPowerUpCounter = 0;
-    private int maxHealth = 200;
+    private int maxHealth = 10;
+    public ArrayList<SyrupHealth> healthBar = new ArrayList<SyrupHealth>();
     /**
      * Act - do whatever the waffle wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -32,7 +33,10 @@ public class waffle extends Actor {
         
         
     }
-
+    
+    public void addHealthBottle(SyrupHealth syrup){
+        healthBar.add(syrup);
+    }
     public void checkifDed() {
         if (this.health == 0) {
             this.getWorld().removeObject(this);
@@ -56,12 +60,33 @@ public class waffle extends Actor {
             this.turn(-3);
         }
         if (Greenfoot.isKeyDown("s")) {
+            if(this.getY() <= 90){
+                this.setLocation(this.getX(),90);
+            } 
+            if(this.getY() >= 790){
+                this.setLocation(this.getX(),790);
+            }
+            if(this.getX() >= 790){
+                this.setLocation(790,this.getY());
+            } 
+            if(this.getX() <= 10){
+                this.setLocation(10,this.getY());
+            } 
             this.move(-2);
         }
         if (Greenfoot.isKeyDown("w")) {
-            if(this.getY() <= 100){
-                this.setLocation(this.getX(),this.getY()+2);
+            if(this.getY() <= 90){
+                this.setLocation(this.getX(),90);
             } 
+            if(this.getY() >= 790){
+                this.setLocation(this.getX(),790);
+            }
+            if(this.getX() >= 790){
+                this.setLocation(790,this.getY());
+            } 
+            if(this.getX() <= 10){
+                this.setLocation(10,this.getY());
+            }  
             this.move(2);
         }
     }
@@ -101,7 +126,9 @@ public class waffle extends Actor {
 
             Butter a = (Butter) getOneIntersectingObject(Butter.class);
             if (a.getOwner() == 1){
-                health = health - 20;
+                health = health - 1;
+                getWorld().removeObject(healthBar.get(healthBar.size() - 1));
+                healthBar.remove(healthBar.size() - 1);
                 this.getWorld().removeObject(a);
             }
         }
@@ -111,8 +138,12 @@ public class waffle extends Actor {
         healthUp b = (healthUp) getOneIntersectingObject(healthUp.class);
         if (b != null){
             getWorld().removeObject(b);
-            if (health <= maxHealth){
-                health+=40;
+            if (health < maxHealth){
+                int haveHealth = healthBar.size();
+                SyrupHealth syrup = new SyrupHealth();
+                getWorld().addObject(syrup, 50 + (20* (haveHealth)), 10);
+                this.addHealthBottle(syrup);
+                health+=1;
             }
             
         }
