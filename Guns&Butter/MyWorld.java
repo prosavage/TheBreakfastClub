@@ -17,8 +17,9 @@ public class MyWorld extends greenfoot.World
         // Create a new world with 800x800 cells with a cell size of 1x1 pixels.
         
         super(800, 800, 1, false);
-        setPaintOrder(SyrupHealth.class, whitebar.class);
+        setPaintOrder(GameRules.class, SyrupHealth.class, whitebar.class);
         setBackground(new GreenfootImage("Background.jpg"));
+        addObject(new GameRules(), 400,400);
         waffle waffle = new waffle();
         
         for (int i = 0; i < 10;i++){
